@@ -1,7 +1,7 @@
 import pandas as pd
 from dash import Dash, html, dcc, Input, Output
 import altair as alt
-# alt.data_transformers.enable('data_server')
+alt.data_transformers.enable('data_server')
 
 crime_data = pd.read_csv("https://raw.githubusercontent.com/Vikiano/datasets/main/crimedata_csv_AllNeighbourhoods_2021.csv")
 crime_data.head()
