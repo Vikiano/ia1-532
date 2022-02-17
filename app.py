@@ -1,7 +1,6 @@
 import pandas as pd
 from dash import Dash, html, dcc, Input, Output
 import altair as alt
-from vega_datasets import data
 alt.data_transformers.enable('data_server')
 
 crime_data = pd.read_csv("/Users/victorfrancis/Victor/UBC-MDS-MCF/MDS/Courses/DSCI_532_viz-2_students/crimedata_csv_AllNeighbourhoods_2021.csv")
